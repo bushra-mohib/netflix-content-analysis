@@ -1,69 +1,91 @@
-# netflix-content-analysis
-Netflix content analysis using SQL (SQLite) and Tableau to explore trends in release year, ratings, duration, and country distribution
+# Netflix Content Analysis Dashboard
+
+This project analyzes a Netflix titles dataset using SQL (SQLite) for data exploration and Tableau for visualization. The objective was to examine content trends, production patterns, and rating distributions to extract meaningful insights from structured data.
+
+---
+
 ## Dashboard Preview
 
 ![Netflix Dashboard](netflix_dashboard_preview.png)
 
-Project Overview
+---
 
-This project analyzes a Netflix dataset containing 6,234 titles using SQL (SQLite) for data exploration and Tableau for visualization. The objective was to explore content trends, analyze production patterns, and generate insights from raw data.
+## Project Overview
 
-Tools Used
+The dataset contains **6,234 Netflix titles** with information including content type, release year, rating, duration, country, and director.
 
-SQLite (SQL)
+Using SQL, the dataset was explored to identify trends and patterns. The results were then visualized in Tableau through an interactive dashboard.
 
-Tableau
+---
 
-Kaggle Netflix Titles Dataset
+## Tools Used
 
-Dataset Source
+- SQLite (SQL)
+- Tableau
+- Kaggle Netflix Titles Dataset
 
-The dataset was obtained from Kaggle and contains metadata including content type, release year, rating, duration, country, and director information.
+---
 
-Business Questions Explored
+## Dataset Source
 
-What is the distribution between Movies and TV Shows?
+The dataset was obtained from Kaggle and includes metadata such as content type, release year, ratings, duration, and country information.
 
-Which years had the highest number of releases?
+---
 
-What ratings are most common?
+## Analysis Performed
 
-Which countries produce the most content?
+- Distribution of Movies vs TV Shows  
+- Titles released per year  
+- Top 10 countries by number of titles  
+- Rating distribution analysis  
+- Average movie duration calculation  
+- TV show season distribution  
+- Content growth trend after 2015  
 
-What is the average movie duration?
+---
 
-How many seasons do most TV shows have?
+## Key Insights
 
-Key Insights
+- Movies represent the majority of content on the platform.  
+- Content production increased significantly between **2016–2018**.  
+- **TV-MA** is the most common rating category.  
+- The **United States** leads in overall content production.  
+- The average movie duration is approximately **99 minutes**.  
+- Most TV shows consist of **1 season**.  
 
-Movies make up the majority of titles.
+---
 
-Content production increased significantly between 2016–2018.
+## Technical Highlights
 
-TV-MA is the most common rating.
+- Used `GROUP BY`, `ORDER BY`, `LIMIT`, `COUNT`, and `AVG`.
+- Parsed duration fields using `SUBSTR()` and `INSTR()`.
+- Handled `NULL` values during analysis.
+- Structured readable SQL queries for exploration.
 
-The United States leads in total content production.
+---
 
-The average movie duration is approximately 99 minutes.
+## SQL Queries
 
-Most TV shows have one season.
+View the SQL file here:  
+[netflix_analysis.sql](netflix_analysis.sql)
 
-Technical Highlights
+---
 
-Used GROUP BY, ORDER BY, LIMIT, COUNT, and AVG.
+## Tableau Dashboard File
 
-Parsed duration fields using SUBSTR and INSTR.
+Download the Tableau dashboard here:  
+[Netflix Dataset Dashboard](Netflix_Dataset_Dashboard.twbx)
 
-Handled NULL values during analysis.
+---
 
-Structured readable SQL queries for analysis.
+## Files Included
 
-Dashboard Preview
+- `netflix_analysis.sql`
+- `Netflix_Dataset_Dashboard.twbx`
+- `netflix_dashboard_preview.png`
 
-Files Included
+---
 
-netflix_analysis.sql
+## Author
 
-Netflix Dataset Dashboard.twbx
-
-netflix_dashboard_preview.png
+Bushra Mohib
